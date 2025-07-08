@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text-color: #FFFFFF;
+    --font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-image: url('/assets/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 4px;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    border: 1px solid var(--text-color);
+    width: 90%;
+    max-width: 400px;
+    min-width: 280px;
+}
+
+form > h2 {
+    margin: 1rem;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+form > input[type="email"],
+form > input[type="password"],
+form > input[type="text"] {
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+    color: var(--text-color);
+    outline: none;
+}
+
+form > input[type="email"]::placeholder,
+form > input[type="password"]::placeholder,
+form > input[type="text"]::placeholder{
+    color: var(--text-color);
+    font-size: 16px;
+    position: relative;
+}
+
+form > .mail-icon {
+    position: relative;
+    left: 92px;
+    top: -36px;
+}
+
+form > .eye-icon,
+form > .eye-closed-icon {
+    position: relative;
+    left: 92px;
+    top: -36px;
+    cursor: pointer;
+}
+
+form > button[type="submit"] {
+    padding: 1rem 6rem;
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    border-radius: 120px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 2rem;
+    transition: 0.3s ease-in-out;
+}
+
+form > button[type="submit"]:hover {
+    scale: 1.02;
+}
+
+@media (max-width: 768px) {
+    form > h2 {
+        font-size: 24px;
+    }
+
+    form > button[type="submit"] {
+        padding: 1rem 3rem;
+        font-size: 14px;
+    }
+}
+
