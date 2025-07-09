@@ -50,7 +50,7 @@ btn.onclick = () => {
     div2.style.backgroundImage = "url('assets/images/turing.jpg')";
     div3.style.backgroundImage = "url('assets/images/margaret.jpg')";
 
-    // Botão de saída
+    // Exit Button
     btn.style.color = "#ffffff";
     btn.style.backgroundColor = "#000000";
     btn.style.border = "none";
